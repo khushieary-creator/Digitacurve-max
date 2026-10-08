@@ -45,8 +45,12 @@ p { color: var(--mut); font-size: 1.05rem; margin-bottom: 24px; }
     <p>Thank you for submitting your details. Our strategy team is currently auditing your channel, page, ads, or website.</p>
     <p>We will get back to you within <strong>[RESPONSE_TIME]</strong> with a personalized growth plan.</p>
     
-    <div style="display:flex; flex-direction:column; gap:12px; align-items:center; margin-top:32px;">
-      <a class="wa-btn" href="https://wa.me/917572094201?text=Hi%2C%20I%20just%20submitted%20the%20audit%20form">
+    <p style="font-weight: 700; color: #25D366; margin-top: 16px; font-size: 1.1rem;">
+      Redirecting to WhatsApp in <span id="timer">3</span> seconds...
+    </p>
+    
+    <div style="display:flex; flex-direction:column; gap:12px; align-items:center; margin-top:24px;">
+      <a class="wa-btn" id="wa-link" href="https://wa.me/917572094201?text=Hi%2C%20I%20just%20submitted%20the%20audit%20form">
         Chat with us directly on WhatsApp
       </a>
       <a class="btn" href="/">Return to Homepage</a>
@@ -60,6 +64,21 @@ dataLayer.push({
   'event': 'lead_submitted_success',
   'page_location': location.href
 });
+
+// Automatic WhatsApp redirect after 3 seconds
+(function() {
+  var seconds = 3;
+  var timerEl = document.getElementById('timer');
+  var waUrl = "https://wa.me/917572094201?text=Hi%2C%20I%20just%20submitted%20the%20audit%20form";
+  var interval = setInterval(function() {
+    seconds--;
+    if (timerEl) timerEl.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(interval);
+      window.location.href = waUrl;
+    }
+  }, 1000);
+})();
 </script>
 </body>
 </html>

@@ -899,8 +899,8 @@
 
               <div class="bf-row">
                 <div>
-                  <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Business Email *</label>
-                  <input type="email" name="email" required placeholder="name@company.com">
+                  <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Business Email (Optional)</label>
+                  <input type="email" name="email" placeholder="name@company.com">
                 </div>
                 <div>
                   <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Phone Number *</label>
@@ -909,14 +909,14 @@
               </div>
 
               <div>
-                <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Company / Website *</label>
-                <input type="text" name="website" required placeholder="yourcompany.com">
+                <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Company / Website (Optional)</label>
+                <input type="text" name="website" placeholder="yourcompany.com">
               </div>
 
               <div class="bf-row">
                 <div>
                   <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Monthly Ad Budget</label>
-                  <select name="budget" required>
+                  <select name="budget">
                     <option value="50k-1lakh">₹50,000 - ₹1,00,000</option>
                     <option value="1lakh-3lakh" selected>₹1,00,000 - ₹3,00,000</option>
                     <option value="3lakh-10lakh">₹3,00,000 - ₹10,00,000</option>
@@ -925,7 +925,7 @@
                 </div>
                 <div>
                   <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Primary Goal</label>
-                  <select name="goal" required>
+                  <select name="goal">
                     <option value="leads">More Qualified Leads</option>
                     <option value="sales">Higher E-Commerce Sales</option>
                     <option value="cpl">Reduce Cost Per Lead (CPL)</option>
@@ -1359,9 +1359,9 @@
             <input type="hidden" name="from_name" value="Digitacurve Website">
             <div style="display: flex; flex-direction: column; gap: 10px;">
               <input type="text" name="name" required placeholder="Your Full Name *">
-              <input type="email" name="email" required placeholder="Business Email *">
               <input type="tel" name="phone" required placeholder="Phone Number *">
-              <input type="text" name="website" required placeholder="Company / Website URL">
+              <input type="email" name="email" placeholder="Business Email (Optional)">
+              <input type="text" name="website" placeholder="Company / Website URL (Optional)">
               <button type="submit" class="btn btn-yellow">
                 Request Free Audit &rarr;
               </button>
