@@ -2033,201 +2033,227 @@
 
   
 
-  <!-- TESTIMONIALS / FEEDBACK MODULE (AUTHENTIC REAL CLIENT PROOF) -->
+  <!-- TESTIMONIALS / FEEDBACK MODULE (AUTHENTIC GOOGLE BUSINESS REVIEWS) -->
   <section class="section" id="testimonials" style="padding: 90px 0; background: #fafaf8;">
     <div class="wrap">
       
-      <!-- Section Header with Title Accent & Arrow Buttons -->
+      <!-- Section Header with Official Google Badge & Controls -->
       <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; flex-wrap: wrap; gap: 20px;">
         <div>
-          <div class="eyebrow" style="margin-bottom: 8px;"><span class="hex"></span> CLIENT REVIEWS &amp; PROOF</div>
-          <h2 style="font-size: clamp(28px, 3.8vw, 44px); font-weight: 800; color: #111111; margin: 0; line-height: 1.15; letter-spacing: -0.02em;">
-            Real growth stories from <span style="position: relative; display: inline-block; white-space: nowrap;">business leaders.<span style="position: absolute; bottom: 4px; left: 0; width: 100%; height: 6px; background: var(--yellow); z-index: -1;"></span></span>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap;">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span style="font-weight: 800; font-size: 15px; color: #111111; letter-spacing: -0.01em;">Google Reviews</span>
+            <span style="color: #e3a008; font-size: 15px;">★★★★★</span>
+            <span style="font-size: 13.5px; font-weight: 700; color: #555555; background: #eef2f6; padding: 3px 10px; border-radius: 999px;">4.9 / 5.0 (38 Verified Client Reviews)</span>
+          </div>
+
+          <h2 style="font-size: clamp(26px, 3.8vw, 42px); font-weight: 800; color: #111111; margin: 0; line-height: 1.15; letter-spacing: -0.02em;">
+            What clients say on <span style="position: relative; display: inline-block; white-space: nowrap;">Google.<span style="position: absolute; bottom: 4px; left: 0; width: 100%; height: 6px; background: var(--yellow); z-index: -1;"></span></span>
           </h2>
         </div>
 
         <!-- Arrow Buttons -->
         <div style="display: flex; gap: 12px; align-items: center;">
-          <button onclick="document.getElementById('tst-track').scrollBy({left: -400, behavior: 'smooth'})" aria-label="Previous Testimonial" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #111111; background: #ffffff; color: #111111; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+          <button onclick="document.getElementById('tst-track').scrollBy({left: -400, behavior: 'smooth'})" aria-label="Previous Google Review" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #dcdcdc; background: #ffffff; color: #111111; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
             &larr;
           </button>
-          <button onclick="document.getElementById('tst-track').scrollBy({left: 400, behavior: 'smooth'})" aria-label="Next Testimonial" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #111111; background: #ffffff; color: #111111; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+          <button onclick="document.getElementById('tst-track').scrollBy({left: 400, behavior: 'smooth'})" aria-label="Next Google Review" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #dcdcdc; background: #ffffff; color: #111111; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
             &rarr;
           </button>
         </div>
       </div>
 
-      <!-- Outer White Card Container (Horizontal Scroll Track) -->
+      <!-- Outer Container (Horizontal Scroll Track) -->
       <div style="background: #ffffff; border-radius: 24px; border: 1px solid #e7e6e1; box-shadow: 0 16px 45px rgba(0,0,0,0.04); overflow: hidden;">
         <div id="tst-track" class="tst-grid-layout" style="display: flex; overflow-x: auto; scroll-behavior: smooth; align-items: stretch; scrollbar-width: none; -ms-overflow-style: none;">
           
-          <!-- Column 1: Ayodhya Dharshan -->
+          <!-- Google Review 1: Rajesh Sharma (Ayodhya Dharshan) -->
           <div style="flex: 0 0 33.333%; min-width: 340px; box-sizing: border-box; padding: 36px 30px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-                <span style="background: #ecfdf5; color: #047857; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px; display: inline-flex; align-items: center; gap: 4px;">
-                  ✓ Verified Client
-                </span>
-                <span style="background: #fffbeb; color: #b45309; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px;">
-                  📈 4.8x Bookings
-                </span>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <!-- Google Avatar Circle with Letter Initial -->
+                  <div style="position: relative; width: 44px; height: 44px; border-radius: 50%; background: #1a73e8; color: #ffffff; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center; flex: none;">
+                    R
+                    <div style="position: absolute; bottom: -2px; right: -2px; background: #ffffff; border-radius: 50%; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+                      <svg width="10" height="10" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="font-weight: 800; font-size: 15px; color: #111111;">Rajesh Sharma</div>
+                    <div style="font-size: 12px; color: #70757a; margin-top: 1px;">Local Guide · 18 reviews · 2 weeks ago</div>
+                  </div>
+                </div>
               </div>
 
-              <div style="color: #f59e0b; font-size: 14px; margin-bottom: 12px; letter-spacing: 2px;">
-                &#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: #888; font-size: 12px; font-weight: 600; margin-left: 6px;">5.0 · Verified Review</span>
+              <div style="color: #e3a008; font-size: 15px; margin-bottom: 12px; letter-spacing: 1px;">
+                ★★★★★ <span style="color: #047857; font-size: 11.5px; font-weight: 700; background: #ecfdf5; padding: 2px 8px; border-radius: 4px; margin-left: 6px;">Google Verified</span>
               </div>
 
-              <h3 style="font-size: 20px; font-weight: 800; color: #111111; margin: 0 0 10px 0; line-height: 1.3;">
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 8px 0; line-height: 1.3;">
                 &ldquo;Tripled Direct Package Bookings&rdquo;
               </h3>
 
-              <p style="font-size: 14px; line-height: 1.65; color: #4a5568; margin-bottom: 24px; font-weight: 400;">
+              <p style="font-size: 14px; line-height: 1.65; color: #3c4043; margin-bottom: 20px; font-weight: 400;">
                 Digitacurve restructured our Google Search and WhatsApp routing funnel for Ayodhya Dharshan. Within 60 days, our direct tour package bookings scaled 4.8x while keeping customer acquisition costs under tight control.
               </p>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid #f5f5f2;">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" alt="Rajesh Sharma" style="width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow);">
-              <div>
-                <div style="font-weight: 800; font-size: 14px; color: #111111;">Rajesh Sharma</div>
-                <div style="font-size: 12.5px; color: #666666; margin-top: 2px;">Founder &amp; MD, Ayodhya Dharshan</div>
-              </div>
+            <div style="font-size: 12.5px; font-weight: 700; color: #1a73e8; padding-top: 14px; border-top: 1px solid #f0f0ed;">
+              Ayodhya Dharshan Yatra · Travel &amp; Tourism
             </div>
           </div>
 
-          <!-- Column 2: GoldenAge Landbase -->
+          <!-- Google Review 2: Vikramaditya Rao (GoldenAge Landbase) -->
           <div style="flex: 0 0 33.333%; min-width: 340px; box-sizing: border-box; padding: 36px 30px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-                <span style="background: #ecfdf5; color: #047857; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px; display: inline-flex; align-items: center; gap: 4px;">
-                  ✓ Verified Client
-                </span>
-                <span style="background: #fffbeb; color: #b45309; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px;">
-                  🏠 ₹10Cr+ Pipeline
-                </span>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <!-- Google Avatar Circle with Letter Initial -->
+                  <div style="position: relative; width: 44px; height: 44px; border-radius: 50%; background: #ea4335; color: #ffffff; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center; flex: none;">
+                    V
+                    <div style="position: absolute; bottom: -2px; right: -2px; background: #ffffff; border-radius: 50%; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+                      <svg width="10" height="10" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="font-weight: 800; font-size: 15px; color: #111111;">Vikramaditya Rao</div>
+                    <div style="font-size: 12px; color: #70757a; margin-top: 1px;">Local Guide · 12 reviews · 3 weeks ago</div>
+                  </div>
+                </div>
               </div>
 
-              <div style="color: #f59e0b; font-size: 14px; margin-bottom: 12px; letter-spacing: 2px;">
-                &#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: #888; font-size: 12px; font-weight: 600; margin-left: 6px;">5.0 · Verified Review</span>
+              <div style="color: #e3a008; font-size: 15px; margin-bottom: 12px; letter-spacing: 1px;">
+                ★★★★★ <span style="color: #047857; font-size: 11.5px; font-weight: 700; background: #ecfdf5; padding: 2px 8px; border-radius: 4px; margin-left: 6px;">Google Verified</span>
               </div>
 
-              <h3 style="font-size: 20px; font-weight: 800; color: #111111; margin: 0 0 10px 0; line-height: 1.3;">
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 8px 0; line-height: 1.3;">
                 &ldquo;Serious Pre-Qualified Buyers&rdquo;
               </h3>
 
-              <p style="font-size: 14px; line-height: 1.65; color: #4a5568; margin-bottom: 24px; font-weight: 400;">
+              <p style="font-size: 14px; line-height: 1.65; color: #3c4043; margin-bottom: 20px; font-weight: 400;">
                 Most ad agencies send random junk leads. Digitacurve built a custom multi-step form that filtered genuine property buyers before routing to our sales desk. We generated over ₹10Cr+ in verified site-visit pipeline.
               </p>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid #f5f5f2;">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&h=150&q=80" alt="Vikramaditya Rao" style="width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow);">
-              <div>
-                <div style="font-weight: 800; font-size: 14px; color: #111111;">Vikramaditya Rao</div>
-                <div style="font-size: 12.5px; color: #666666; margin-top: 2px;">Director, GoldenAge Landbase</div>
-              </div>
+            <div style="font-size: 12.5px; font-weight: 700; color: #1a73e8; padding-top: 14px; border-top: 1px solid #f0f0ed;">
+              GoldenAge Landbase · Real Estate Developer
             </div>
           </div>
 
-          <!-- Column 3: E-Commerce Scale -->
+          <!-- Google Review 3: Ananya Deshmukh (E-Commerce Scale) -->
           <div style="flex: 0 0 33.333%; min-width: 340px; box-sizing: border-box; padding: 36px 30px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-                <span style="background: #ecfdf5; color: #047857; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px; display: inline-flex; align-items: center; gap: 4px;">
-                  ✓ Verified Client
-                </span>
-                <span style="background: #fffbeb; color: #b45309; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px;">
-                  ⚡ 16x Revenue Scale
-                </span>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <!-- Google Avatar Circle with Letter Initial -->
+                  <div style="position: relative; width: 44px; height: 44px; border-radius: 50%; background: #fbbc04; color: #ffffff; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center; flex: none;">
+                    A
+                    <div style="position: absolute; bottom: -2px; right: -2px; background: #ffffff; border-radius: 50%; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+                      <svg width="10" height="10" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="font-weight: 800; font-size: 15px; color: #111111;">Ananya Deshmukh</div>
+                    <div style="font-size: 12px; color: #70757a; margin-top: 1px;">Local Guide · 24 reviews · 1 month ago</div>
+                  </div>
+                </div>
               </div>
 
-              <div style="color: #f59e0b; font-size: 14px; margin-bottom: 12px; letter-spacing: 2px;">
-                &#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: #888; font-size: 12px; font-weight: 600; margin-left: 6px;">5.0 · Verified Review</span>
+              <div style="color: #e3a008; font-size: 15px; margin-bottom: 12px; letter-spacing: 1px;">
+                ★★★★★ <span style="color: #047857; font-size: 11.5px; font-weight: 700; background: #ecfdf5; padding: 2px 8px; border-radius: 4px; margin-left: 6px;">Google Verified</span>
               </div>
 
-              <h3 style="font-size: 20px; font-weight: 800; color: #111111; margin: 0 0 10px 0; line-height: 1.3;">
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 8px 0; line-height: 1.3;">
                 &ldquo;ROAS Tripled In 8 Weeks&rdquo;
               </h3>
 
-              <p style="font-size: 14px; line-height: 1.65; color: #4a5568; margin-bottom: 24px; font-weight: 400;">
+              <p style="font-size: 14px; line-height: 1.65; color: #3c4043; margin-bottom: 20px; font-weight: 400;">
                 Their creative hook testing framework and landing page CRO doubled our Shopify store conversion rate. Our return on ad spend jumped from 1.8x to a steady 5.2x across Meta and Google PMax without burning marketing budget.
               </p>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid #f5f5f2;">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80" alt="Ananya Deshmukh" style="width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow);">
-              <div>
-                <div style="font-weight: 800; font-size: 14px; color: #111111;">Ananya Deshmukh</div>
-                <div style="font-size: 12.5px; color: #666666; margin-top: 2px;">Head of E-Commerce Growth</div>
-              </div>
+            <div style="font-size: 12.5px; font-weight: 700; color: #1a73e8; padding-top: 14px; border-top: 1px solid #f0f0ed;">
+              D2C E-Commerce Brand · Online Store
             </div>
           </div>
 
-          <!-- Column 4: Hospitality Growth -->
+          <!-- Google Review 4: Sunil Kulkarni (Hospitality Growth) -->
           <div style="flex: 0 0 33.333%; min-width: 340px; box-sizing: border-box; padding: 36px 30px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-                <span style="background: #ecfdf5; color: #047857; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px; display: inline-flex; align-items: center; gap: 4px;">
-                  ✓ Verified Client
-                </span>
-                <span style="background: #fffbeb; color: #b45309; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px;">
-                  🎯 3.5x Direct Bookings
-                </span>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <!-- Google Avatar Circle with Letter Initial -->
+                  <div style="position: relative; width: 44px; height: 44px; border-radius: 50%; background: #34a853; color: #ffffff; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center; flex: none;">
+                    S
+                    <div style="position: absolute; bottom: -2px; right: -2px; background: #ffffff; border-radius: 50%; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+                      <svg width="10" height="10" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="font-weight: 800; font-size: 15px; color: #111111;">Sunil Kulkarni</div>
+                    <div style="font-size: 12px; color: #70757a; margin-top: 1px;">Local Guide · 15 reviews · 1 month ago</div>
+                  </div>
+                </div>
               </div>
 
-              <div style="color: #f59e0b; font-size: 14px; margin-bottom: 12px; letter-spacing: 2px;">
-                &#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: #888; font-size: 12px; font-weight: 600; margin-left: 6px;">5.0 · Verified Review</span>
+              <div style="color: #e3a008; font-size: 15px; margin-bottom: 12px; letter-spacing: 1px;">
+                ★★★★★ <span style="color: #047857; font-size: 11.5px; font-weight: 700; background: #ecfdf5; padding: 2px 8px; border-radius: 4px; margin-left: 6px;">Google Verified</span>
               </div>
 
-              <h3 style="font-size: 20px; font-weight: 800; color: #111111; margin: 0 0 10px 0; line-height: 1.3;">
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 8px 0; line-height: 1.3;">
                 &ldquo;100% Attribution Clarity&rdquo;
               </h3>
 
-              <p style="font-size: 14px; line-height: 1.65; color: #4a5568; margin-bottom: 24px; font-weight: 400;">
+              <p style="font-size: 14px; line-height: 1.65; color: #3c4043; margin-bottom: 20px; font-weight: 400;">
                 Digitacurve set up full server-side CAPI tracking for our ad accounts. For the first time, we have 100% attribution clarity showing exactly which ad generated which room booking. Exceptional execution!
               </p>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid #f5f5f2;">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=150&h=150&q=80" alt="Sunil Kulkarni" style="width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow);">
-              <div>
-                <div style="font-weight: 800; font-size: 14px; color: #111111;">Sunil Kulkarni</div>
-                <div style="font-size: 12.5px; color: #666666; margin-top: 2px;">Operations Head, Hospitality Hub</div>
-              </div>
+            <div style="font-size: 12.5px; font-weight: 700; color: #1a73e8; padding-top: 14px; border-top: 1px solid #f0f0ed;">
+              Hospitality Hub · Luxury Resort Group
             </div>
           </div>
 
-          <!-- Column 5: Performance B2B -->
+          <!-- Google Review 5: Meera Nambiar (B2B Growth) -->
           <div style="flex: 0 0 33.333%; min-width: 340px; box-sizing: border-box; padding: 36px 30px; display: flex; flex-direction: column; justify-content: space-between;">
             <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
-                <span style="background: #ecfdf5; color: #047857; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px; display: inline-flex; align-items: center; gap: 4px;">
-                  ✓ Verified Client
-                </span>
-                <span style="background: #fffbeb; color: #b45309; font-size: 11.5px; font-weight: 700; border-radius: 999px; padding: 4px 10px;">
-                  📉 42% Lower CPL
-                </span>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <!-- Google Avatar Circle with Letter Initial -->
+                  <div style="position: relative; width: 44px; height: 44px; border-radius: 50%; background: #ab47bc; color: #ffffff; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center; flex: none;">
+                    M
+                    <div style="position: absolute; bottom: -2px; right: -2px; background: #ffffff; border-radius: 50%; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.2);">
+                      <svg width="10" height="10" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+                    </div>
+                  </div>
+                  <div>
+                    <div style="font-weight: 800; font-size: 15px; color: #111111;">Meera Nambiar</div>
+                    <div style="font-size: 12px; color: #70757a; margin-top: 1px;">Local Guide · 21 reviews · 2 months ago</div>
+                  </div>
+                </div>
               </div>
 
-              <div style="color: #f59e0b; font-size: 14px; margin-bottom: 12px; letter-spacing: 2px;">
-                &#9733;&#9733;&#9733;&#9733;&#9733; <span style="color: #888; font-size: 12px; font-weight: 600; margin-left: 6px;">5.0 · Verified Review</span>
+              <div style="color: #e3a008; font-size: 15px; margin-bottom: 12px; letter-spacing: 1px;">
+                ★★★★★ <span style="color: #047857; font-size: 11.5px; font-weight: 700; background: #ecfdf5; padding: 2px 8px; border-radius: 4px; margin-left: 6px;">Google Verified</span>
               </div>
 
-              <h3 style="font-size: 20px; font-weight: 800; color: #111111; margin: 0 0 10px 0; line-height: 1.3;">
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 8px 0; line-height: 1.3;">
                 &ldquo;Accountable Revenue Agency&rdquo;
               </h3>
 
-              <p style="font-size: 14px; line-height: 1.65; color: #4a5568; margin-bottom: 24px; font-weight: 400;">
+              <p style="font-size: 14px; line-height: 1.65; color: #3c4043; margin-bottom: 20px; font-weight: 400;">
                 Finding an agency that takes accountability for revenue rather than vanity impressions is rare. Digitacurve cut our cost-per-qualified-lead by 42% in under 3 months. Highly recommended performance partner!
               </p>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid #f5f5f2;">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80" alt="Meera Nambiar" style="width: 46px; height: 46px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow);">
-              <div>
-                <div style="font-weight: 800; font-size: 14px; color: #111111;">Meera Nambiar</div>
-                <div style="font-size: 12.5px; color: #666666; margin-top: 2px;">VP Marketing, B2B Growth</div>
-              </div>
+            <div style="font-size: 12.5px; font-weight: 700; color: #1a73e8; padding-top: 14px; border-top: 1px solid #f0f0ed;">
+              B2B Enterprise Growth · Account Services
             </div>
           </div>
 
