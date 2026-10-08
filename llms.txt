@@ -1,0 +1,39 @@
+# DIGITACURVE
+
+> Performance Marketing & Growth Agency turning ad spend into predictable leads, sales, and measurable revenue.
+
+## Agency Overview
+Digitacurve is an award-winning performance marketing agency in India. We engineer data-driven advertising systems across Google Ads, Meta Ads, Lead Generation, CRO, and Server-Side Analytics.
+
+- **Primary Positioning**: Performance Marketing & Growth Agency
+- **Core Tagline**: "Turn Ad Spend Into Predictable Growth."
+- **Core Services Offered**:
+  1. Google Ads & PPC Strategy (Search, PMax, Display, YouTube)
+  2. Meta Ads & Paid Social (Instagram Reels, Facebook Feed)
+  3. Predictable Lead Generation Systems
+  4. Full Performance Marketing & Media Architecture
+  5. Conversion Rate Optimization (CRO) & Landing Pages
+  6. Omnichannel Remarketing
+  7. GA4, GTM, CAPI & Server-Side Analytics
+  8. AI-Powered Advertising
+
+## Key Page Sections
+- [Hero & Lead Capture](https://[DOMAIN]/#hero): Performance architecture statement, trust badges, and growth audit request.
+- [What We Run (Services)](https://[DOMAIN]/#services): 8 core performance advertising offerings.
+- [Our Methodology (Process)](https://[DOMAIN]/#process): 8-step framework from research to campaign scale.
+- [Measurable Outcomes (Results)](https://[DOMAIN]/#results): Benchmark metrics (ROAS, CPL, Qualified Lead Multiplier).
+- [Case Studies (Proof)](https://[DOMAIN]/#case-studies): Industry performance breakdowns for Real Estate, Travel, and D2C.
+- [Full Funnel Architecture](https://[DOMAIN]/#full-funnel): End-to-end integration of Ads + Creative + Landing Pages + CRM + Revenue.
+- [Why Digitacurve](https://[DOMAIN]/#why-us): Performance agency differentiators vs traditional vanity metric agencies.
+- [FAQ Accordion](https://[DOMAIN]/#faq): SEO & AEO answer engine optimization for performance advertising questions.
+
+## Contact & Location
+- **Email**: [EMAIL]
+- **Phone**: [PHONE]
+- **WhatsApp**: [WHATSAPP_NUMBER]
+- **Address**: [ADDRESS], [CITY], [STATE] - [PINCODE]
+- **Website**: https://[DOMAIN]
+
+## Legal Pages
+- [Privacy Policy](https://[DOMAIN]/privacy.html)
+- [Terms & Conditions](https://[DOMAIN]/terms.html)

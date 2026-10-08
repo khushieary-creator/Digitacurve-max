@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Performance Marketing Agency in India | Digitacurve</title>
+  <meta name="description" content="Digitacurve is a premier performance marketing agency in India. Turn ad spend into predictable growth with Google Ads, Meta Ads, CRO, and lead generation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <style>
+    :root {
+      --ink: #111111;
+      --yellow: #F3E733;
+      --gray: #5c5c5c;
+      --line: #e7e6e1;
+      --paper: #ffffff;
+      --maxw: 1200px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; color: var(--ink); background: #fafaf9; line-height: 1.6; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    
+    header.nav {
+      position: sticky; top: 0; z-index: 140; background: rgba(255, 255, 255, 0.95) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); box-shadow: 0 4px 20px rgba(0,0,0,0.03); padding: 12px 0;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 800; text-decoration: none; color: var(--ink); letter-spacing: -0.02em; }
+    .logo-badge { width: 34px; height: 34px; background: var(--yellow); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #111; font-size: 18px; }
+    .btn { font-weight: 700; font-size: 14.5px; padding: 12px 26px; border-radius: 999px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s; border: none; cursor: pointer; }
+    .btn-yellow { background: var(--yellow); color: var(--ink); }
+    .btn-dark { background: var(--ink); color: #fff; }
+    .btn:hover { transform: translateY(-2px); }
+
+    header.nav nav a.link { font-weight: 600; font-size: 15px; color: var(--ink); text-decoration: none; transition: color 0.2s; }
+    header.nav nav a.link:hover { color: #000; text-decoration: underline; }
+    .mobile-toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 8px; font-size: 20px; color: var(--ink); cursor: pointer; padding: 6px 12px; font-weight: 700; line-height: 1; }
+
+    .hero { background: var(--ink); color: #fff; padding: 80px 0 70px; }
+    .hero h1 { font-size: clamp(34px, 4.5vw, 64px); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+    .hero p { font-size: 18px; color: #ccc; max-width: 720px; margin-bottom: 32px; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    .lead-form { background: #fff; border-radius: 20px; padding: 32px; border: 1px solid var(--line); box-shadow: 0 20px 50px rgba(0,0,0,0.06); color: var(--ink); }
+    .lead-form h3 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+    .lead-form p { font-size: 13px; color: var(--gray); margin-bottom: 20px; }
+    .lead-form input, .lead-form select { width: 100%; padding: 14px; border: 1px solid var(--line); border-radius: 10px; font-size: 14px; margin-bottom: 12px; font-family: inherit; }
+
+    .section { padding: 80px 0; }
+    .card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+    @media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 32px; box-shadow: 0 6px 20px rgba(0,0,0,0.04); }
+    .card h3 { font-size: 22px; font-weight: 800; margin-bottom: 12px; color: var(--ink); }
+    .card p { color: var(--gray); font-size: 15px; }
+
+    .partner-row {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 48px !important;
+      align-items: center !important;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-toggle { display: block !important; }
+      header.nav .row { flex-wrap: wrap; height: auto !important; padding: 8px 0; }
+      header.nav nav { display: none !important; width: 100%; flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 16px; border-top: 1px solid var(--line); margin-top: 10px; }
+      header.nav.mobile-open nav { display: flex !important; }
+      header.nav nav .btn { width: 100%; justify-content: center; }
+      .partner-row { grid-template-columns: 1fr !important; gap: 28px !important; }
+      .case-study-split-grid { grid-template-columns: 1fr !important; }
+      .case-study-split-grid > div:first-child { padding: 32px 20px !important; }
+      .case-study-split-grid > div:last-child { min-height: 280px !important; }
+    }
+
+    .footer { background: var(--ink); color: #fff; padding: 48px 0 32px; font-size: 14px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header (Always Visible Top Menu) -->
+  <header class="nav" style="position: sticky; top: 0; z-index: 140; background: rgba(255, 255, 255, 0.98) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #e7e6e1; box-shadow: 0 4px 20px rgba(0,0,0,0.04); padding: 14px 0;">
+    <div class="wrap">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 800; text-decoration: none; color: #111111;">
+          <div class="logo-badge" style="width: 34px; height: 34px; background: #F3E733; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #111111; font-size: 18px;">D</div>
+          <span>DIGITACURVE</span>
+        </a>
+
+        <nav style="display: flex !important; align-items: center; gap: 22px; flex-wrap: wrap;">
+          <a href="index.html#services" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Services</a>
+          <a href="index.html#process" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Process</a>
+          <a href="index.html#results" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Results</a>
+          <a href="index.html#work" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Case Studies</a>
+          <a href="blogs.html" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Blogs</a>
+          <a href="index.html#faq" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">FAQ</a>
+          <a href="#hero-form" style="background: #F3E733; color: #111111; font-weight: 700; font-size: 14px; padding: 10px 22px; border-radius: 999px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(243,231,51,0.4);">Let's Talk &rarr;</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="grid-2">
+        <div>
+          <div style="font-size: 13px; font-weight: 700; color: var(--yellow); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px;">
+            &#9670; PERFORMANCE MARKETING AGENCY IN INDIA
+          </div>
+          <h1>Turn Ad Spend Into Predictable Growth.</h1>
+          <p>We build end-to-end acquisition systems connecting high-intent Google Search, creative-led Meta campaigns, pre-qualifying landing pages, and automated CRM lead routing.</p>
+          
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="#hero-form" class="btn btn-yellow">Claim Free Audit</a>
+            <a href="index.html#spend-returns" class="btn btn-dark" style="border: 1px solid #444;">Explore Case Studies</a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="lead-form" id="hero-form">
+          <h3>Claim Free Growth Audit</h3>
+          <p>Our strategy team will analyze your ad account within 24 hours.</p>
+          <form action="thank-you.html" method="GET">
+            <input type="text" name="name" required placeholder="Full Name *">
+            <input type="email" name="email" required placeholder="Business Email *">
+            <input type="tel" name="phone" required placeholder="Phone Number *">
+            <input type="text" name="website" required placeholder="Company / Website URL *">
+            <button type="submit" class="btn btn-yellow" style="width:100%; justify-content:center;">Request Free Audit &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUR PERFORMANCE PARTNER SECTION (EXACT DESKTOP SIDE-BY-SIDE SIDE LAYOUT) -->
+  <section class="section" id="performance-partner" style="background: #ffffff; padding: 76px 0;">
+    <div class="wrap">
+      <div class="partner-row">
+        
+        <!-- Left Photo (50% Desktop Width) -->
+        <div style="width: 100%;">
+          <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 16px 45px rgba(0,0,0,0.08); border: 1px solid var(--line);">
+            <img src="images/performance-partner-team.jpg" alt="Digitacurve Performance Partner Team Strategy Session" style="width: 100%; height: auto; display: block; object-fit: cover;" />
+          </div>
+        </div>
+
+        <!-- Right Content Copy (50% Desktop Width) -->
+        <div style="width: 100%;">
+          <h2 style="font-size: clamp(26px, 3vw, 38px); font-weight: 800; color: var(--ink); margin-bottom: 18px; line-height: 1.24; letter-spacing: -0.02em;">
+            Your Performance Partner
+          </h2>
+
+          <p style="font-size: 15px; color: #5c5c5c; line-height: 1.7; margin-bottom: 18px; font-weight: 400;">
+            Welcome to Digitacurve, where Performance Marketing becomes an art form. Our captivating PPC Management team crafts ad campaigns that make hearts skip a beat, strategically targeting your audience and ensuring your brand soars. Connect with the right audience at the perfect time through our SEM Service, while our Consulting uncovers hidden opportunities and builds lasting relationships.
+          </p>
+
+          <p style="font-size: 15px; color: #5c5c5c; line-height: 1.7; margin: 0; font-weight: 400;">
+            But our expertise doesn't end there. Experience the power of our Google Advertising services, connecting your brand with the right audience at the perfect moment. Looking for personalized guidance? Our ROI Management wizards uncover hidden opportunities, while our ROI Consulting provides strategic insights, building a lasting bond with your target audience. Trust us to cultivate an exhilarating relationship &mdash; one brimming with excitement, trust, and endless possibilities.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Industry Solutions Section -->
+  <section class="section" id="industry-solutions">
+    <div class="wrap">
+      <h2 style="font-size: 38px; font-weight: 800; text-align: center;">Industry Performance Solutions</h2>
+      <p style="text-align: center; color: var(--gray); font-size: 16px; margin-top: 8px;">Tap any industry landing page to view live benchmarks &amp; case studies.</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <span style="background: var(--yellow); color: #000; font-weight: 800; font-size: 12px; padding: 4px 12px; border-radius: 999px; display: inline-block; margin-bottom: 14px;">4.8x ROI</span>
+          <h3>Travel Company</h3>
+          <p style="margin-bottom: 18px;">Google Search &amp; Meta Video ad systems for tour operators and holiday package providers.</p>
+          <a href="travel-company.html" class="btn btn-dark" style="font-size: 13.5px; padding: 10px 20px;">View Travel Landing Page &rarr;</a>
+        </div>
+
+        <div class="card">
+          <span style="background: var(--yellow); color: #000; font-weight: 800; font-size: 12px; padding: 4px 12px; border-radius: 999px; display: inline-block; margin-bottom: 14px;">₹10k Cr+ Pipeline</span>
+          <h3>Real Estate</h3>
+          <p style="margin-bottom: 18px;">Verified buyer lead generation &amp; pre-qualifying site visit booking funnels for luxury properties.</p>
+          <a href="real-estate.html" class="btn btn-dark" style="font-size: 13.5px; padding: 10px 20px;">View Real Estate Landing Page &rarr;</a>
+        </div>
+
+        <div class="card">
+          <span style="background: var(--yellow); color: #000; font-weight: 800; font-size: 12px; padding: 4px 12px; border-radius: 999px; display: inline-block; margin-bottom: 14px;">3.5x Sell-Out</span>
+          <h3>Builder &amp; Developer</h3>
+          <p style="margin-bottom: 18px;">Inventory sell-out acceleration &amp; B2B channel partner broker onboarding campaigns.</p>
+          <a href="builder.html" class="btn btn-dark" style="font-size: 13.5px; padding: 10px 20px;">View Builder Landing Page &rarr;</a>
+        </div>
+
+        <div class="card">
+          <span style="background: var(--yellow); color: #000; font-weight: 800; font-size: 12px; padding: 4px 12px; border-radius: 999px; display: inline-block; margin-bottom: 14px;">16x Sales Growth</span>
+          <h3>E-Commerce &amp; D2C</h3>
+          <p style="margin-bottom: 18px;">Scaling online store revenue at 5.2x ROAS with Meta DPA, Google Shopping, &amp; CRO.</p>
+          <a href="e-commerce.html" class="btn btn-dark" style="font-size: 13.5px; padding: 10px 20px;">View E-Commerce Landing Page &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CASE STUDY SHOWCASE MODULE (MATCHING REFERENCE SCREENSHOT) -->
+  <section class="section" id="featured-case-study" style="padding-top:0;">
+    <div class="wrap">
+      <div style="background: #ffffff; border-radius: 32px; border: 1px solid #e7e6e1; box-shadow: 0 20px 60px rgba(0,0,0,0.06); overflow: hidden;">
+        <div class="case-study-split-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; min-height: 480px;">
+          
+          <!-- Left Copy (Padding Only on Left Half) -->
+          <div style="padding: 52px 48px; display: flex; flex-direction: column; justify-content: center;">
+            <div style="margin-bottom: 22px;">
+              <span style="background: #f2f2f0; color: #111; font-weight: 800; font-size: 15px; padding: 8px 22px; border-radius: 10px; display: inline-block; letter-spacing: -0.01em;">
+                deconstruct
+              </span>
+            </div>
+
+            <h2 style="font-size: clamp(26px, 3.2vw, 40px); font-weight: 800; line-height: 1.18; color: #111111; margin-bottom: 18px; letter-spacing: -0.02em;">
+              Online revenue up <span style="font-weight: 800;">16x</span> at a steady <span style="font-weight: 800;">5.2x+ ROAS.</span>
+            </h2>
+
+            <p style="font-size: 15px; color: #5c5c5c; line-height: 1.65; margin-bottom: 26px; font-weight: 400;">
+              Full funnel performance for Deconstruct's ingredient-led skincare range across Meta and Google. We rebuilt the account around the hero SKUs, sharpened creative testing, and scaled ad spend without letting efficiency slip. Over six months, online revenue boomed by 16 times while return on ad spend held above five, and new customer acquisition cost fell along the way.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 30px;">
+              <span style="background: #f2f2f0; color: #333333; font-size: 13px; font-weight: 600; padding: 7px 18px; border-radius: 999px;">Meta Ads</span>
+              <span style="background: #f2f2f0; color: #333333; font-size: 13px; font-weight: 600; padding: 7px 18px; border-radius: 999px;">Google Ads</span>
+              <span style="background: #f2f2f0; color: #333333; font-size: 13px; font-weight: 600; padding: 7px 18px; border-radius: 999px;">D2C Funnel</span>
+              <span style="background: #f2f2f0; color: #333333; font-size: 13px; font-weight: 600; padding: 7px 18px; border-radius: 999px;">ROAS Scaling</span>
+              <span style="background: #f2f2f0; color: #333333; font-size: 13px; font-weight: 600; padding: 7px 18px; border-radius: 999px;">Skincare</span>
+            </div>
+
+            <div>
+              <a href="e-commerce.html" class="btn btn-dark" style="background: #111111; color: #ffffff; padding: 13px 28px; border-radius: 999px; font-weight: 700; font-size: 14px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none;">
+                Read Case Study &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Image Side (Full Height Fills Right Half Of Card) -->
+          <div style="position: relative; width: 100%; height: 100%; min-height: 440px; background: #f5f5f3; overflow: hidden;">
+            <div style="position: absolute; top: 20px; right: 20px; z-index: 10;">
+              <span style="background: #111111; color: #ffffff; font-size: 12px; font-weight: 700; padding: 7px 20px; border-radius: 999px; letter-spacing: 0.02em;">
+                Case Study
+              </span>
+            </div>
+            
+            <img src="images/casestudy-skincare.webp" alt="Deconstruct Skincare D2C Case Study Products" style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPACT TESTIMONIALS / FEEDBACK MODULE (DESKTOP SAME DESIGN, SLEEK SIZE) -->
+  <section class="section" id="testimonials" style="padding: 64px 0;">
+    <div class="wrap">
+      
+      <!-- Section Header with Title Accent & Arrow Buttons -->
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 32px; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h2 style="font-size: clamp(26px, 3.2vw, 40px); font-weight: 800; color: #111111; margin: 0; line-height: 1.15; letter-spacing: -0.02em;">
+            Happy words from our <span style="position: relative; display: inline-block; white-space: nowrap;">valuable clients!<span style="position: absolute; bottom: 3px; left: 0; width: 100%; height: 7px; background: var(--yellow); z-index: -1;"></span></span>
+          </h2>
+        </div>
+
+        <!-- Arrow Buttons -->
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <button onclick="document.getElementById('tst-track').scrollBy({left: -360, behavior: 'smooth'})" aria-label="Previous Testimonial" style="width: 38px; height: 38px; border-radius: 50%; border: 1px solid #111111; background: transparent; color: #111111; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
+            &larr;
+          </button>
+          <button onclick="document.getElementById('tst-track').scrollBy({left: 360, behavior: 'smooth'})" aria-label="Next Testimonial" style="width: 38px; height: 38px; border-radius: 50%; border: 1px solid #111111; background: transparent; color: #111111; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">
+            &rarr;
+          </button>
+        </div>
+      </div>
+
+      <!-- Outer White Card Container (3 Visible Side-by-Side Columns In Desktop Mode, Horizontal Scroll for 5 Cards) -->
+      <div style="background: #ffffff; border-radius: 24px; border: 1px solid #e7e6e1; box-shadow: 0 12px 36px rgba(0,0,0,0.03); overflow: hidden;">
+        <div id="tst-track" class="tst-grid-layout" style="display: flex; overflow-x: auto; scroll-behavior: smooth; align-items: stretch; scrollbar-width: none; -ms-overflow-style: none;">
+          
+          <!-- Column 1: Urbanbed -->
+          <div style="flex: 0 0 33.333%; min-width: 33.333%; box-sizing: border-box; padding: 28px 24px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 6px 0;">
+                &ldquo;Real Growth&rdquo;
+              </h3>
+              
+              <div style="color: #f59e0b; font-size: 13px; margin-bottom: 12px; letter-spacing: 1.5px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+
+              <p style="font-size: 13.5px; line-height: 1.6; color: #555555; margin-bottom: 18px; font-weight: 400;">
+                Digitacurve changed our ad performance fast. They targeted our actual buyers instead of cheap clicks. Our cost per order fell, sales climbed continuously, and Urbanbed grew more in one quarter than the previous year.
+              </p>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; padding-top: 12px; border-top: 1px solid #f5f5f3;">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80" alt="Rajiv Jaluka" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1px solid #e7e6e1;">
+              <div>
+                <div style="font-weight: 800; font-size: 13.5px; color: #111111;">Rajiv Jaluka, Founder</div>
+                <div style="font-size: 12px; color: #777777; margin-top: 1px;">Urbanbed</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Ethos -->
+          <div style="flex: 0 0 33.333%; min-width: 33.333%; box-sizing: border-box; padding: 28px 24px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 6px 0;">
+                &ldquo;Consistent ROAS&rdquo;
+              </h3>
+              
+              <div style="color: #f59e0b; font-size: 13px; margin-bottom: 12px; letter-spacing: 1.5px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+
+              <p style="font-size: 13.5px; line-height: 1.6; color: #555555; margin-bottom: 18px; font-weight: 400;">
+                Selling luxury watches online requires precise targeting. Digitacurve went after high-intent buyers and kept refining campaigns. Our return on ad spend stayed consistently strong even as we scaled ad budget significantly.
+              </p>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; padding-top: 12px; border-top: 1px solid #f5f5f3;">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" alt="Manish Khanna" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1px solid #e7e6e1;">
+              <div>
+                <div style="font-weight: 800; font-size: 13.5px; color: #111111;">Manish Khanna, Marketing Head</div>
+                <div style="font-size: 12px; color: #777777; margin-top: 1px;">Ethos</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 3: LeasePlan -->
+          <div style="flex: 0 0 33.333%; min-width: 33.333%; box-sizing: border-box; padding: 28px 24px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 6px 0;">
+                &ldquo;Qualified Pipeline&rdquo;
+              </h3>
+              
+              <div style="color: #f59e0b; font-size: 13px; margin-bottom: 12px; letter-spacing: 1.5px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+
+              <p style="font-size: 13.5px; line-height: 1.6; color: #555555; margin-bottom: 18px; font-weight: 400;">
+                With long sales cycles, most agencies lose patience. Digitacurve built a targeted account-based strategy that transformed our lead quality. Our sales team is now closing qualified conversations consistently with clear reporting.
+              </p>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; padding-top: 12px; border-top: 1px solid #f5f5f3;">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&h=100&q=80" alt="Shalini Baweja" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1px solid #e7e6e1;">
+              <div>
+                <div style="font-weight: 800; font-size: 13.5px; color: #111111;">Shalini Baweja, Head of Marketing</div>
+                <div style="font-size: 12px; color: #777777; margin-top: 1px;">LeasePlan</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 4: Deconstruct -->
+          <div style="flex: 0 0 33.333%; min-width: 33.333%; box-sizing: border-box; padding: 28px 24px; border-right: 1px solid #f0f0ed; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 6px 0;">
+                &ldquo;16x Revenue Scale&rdquo;
+              </h3>
+              
+              <div style="color: #f59e0b; font-size: 13px; margin-bottom: 12px; letter-spacing: 1.5px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+
+              <p style="font-size: 13.5px; line-height: 1.6; color: #555555; margin-bottom: 18px; font-weight: 400;">
+                Digitacurve redesigned our entire funnel strategy and high-performing Meta ad creatives. Our ROAS tripled within eight weeks, helping us scale monthly revenue 16x sustainably without burning marketing budget.
+              </p>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; padding-top: 12px; border-top: 1px solid #f5f5f3;">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&h=100&q=80" alt="Malini Sen" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1px solid #e7e6e1;">
+              <div>
+                <div style="font-weight: 800; font-size: 13.5px; color: #111111;">Malini Sen, Growth Manager</div>
+                <div style="font-size: 12px; color: #777777; margin-top: 1px;">Deconstruct</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 5: Bare Anatomy -->
+          <div style="flex: 0 0 33.333%; min-width: 33.333%; box-sizing: border-box; padding: 28px 24px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 18px; font-weight: 800; color: #111111; margin: 0 0 6px 0;">
+                &ldquo;42% Lower CAC&rdquo;
+              </h3>
+              
+              <div style="color: #f59e0b; font-size: 13px; margin-bottom: 12px; letter-spacing: 1.5px;">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+              </div>
+
+              <p style="font-size: 13.5px; line-height: 1.6; color: #555555; margin-bottom: 18px; font-weight: 400;">
+                Finding an agency that understands customer acquisition costs is rare. Digitacurve optimized our Google PMax and Search campaigns, cutting acquisition costs by 42% while doubling our total online order volume.
+              </p>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; padding-top: 12px; border-top: 1px solid #f5f5f3;">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80" alt="Karan Verma" style="width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1px solid #e7e6e1;">
+              <div>
+                <div style="font-weight: 800; font-size: 13.5px; color: #111111;">Karan Verma, VP Marketing</div>
+                <div style="font-size: 12px; color: #777777; margin-top: 1px;">Bare Anatomy</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; 2026 Digitacurve Performance Marketing Agency. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
