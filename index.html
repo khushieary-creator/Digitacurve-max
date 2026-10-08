@@ -551,13 +551,15 @@
         z-index: 2;
       }
 
+      .mobile-toggle { display: none; }
+
       @media (max-width: 768px) {
         /* Mobile Navigation Menu Dropdown */
-        .mobile-toggle { display: inline-flex !important; background: none; border: 1px solid var(--line); border-radius: 8px; font-size: 20px; color: var(--ink); cursor: pointer; padding: 6px 12px; font-weight: 700; line-height: 1; }
-        header.nav .row { flex-wrap: wrap; height: auto !important; padding: 14px 0; }
-        header.nav nav { display: none; width: 100%; flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 16px; border-top: 1px solid var(--line); margin-top: 10px; }
+        .mobile-toggle { display: inline-flex !important; background: #ffffff; border: 1px solid var(--line); border-radius: 8px; font-size: 20px; color: var(--ink); cursor: pointer; padding: 6px 12px; font-weight: 700; line-height: 1; align-items: center; justify-content: center; }
+        header.nav .nav-container { flex-wrap: wrap !important; }
+        header.nav nav { display: none !important; width: 100% !important; flex-direction: column !important; align-items: flex-start !important; gap: 14px !important; padding-top: 16px !important; padding-bottom: 10px !important; border-top: 1px solid var(--line) !important; margin-top: 10px !important; }
         header.nav.mobile-open nav { display: flex !important; }
-        header.nav nav .btn { width: 100%; justify-content: center; }
+        header.nav nav a.btn { width: 100% !important; justify-content: center !important; }
       }
 
       /* Hero Content Tuning */
@@ -820,11 +822,15 @@
   <!-- HEADER (ALWAYS VISIBLE TOP MENU) -->
   <header class="nav" style="position: sticky; top: 0; z-index: 140; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #e7e6e1; box-shadow: 0 4px 20px rgba(0,0,0,0.04); padding: 14px 0;">
     <div class="wrap">
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
         <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 800; text-decoration: none; color: #111111;">
           <div class="logo-badge" style="width: 34px; height: 34px; background: #F3E733; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 900; color: #111111; font-size: 18px;">D</div>
           <span>DIGITACURVE</span>
         </a>
+
+        <button class="mobile-toggle" onclick="document.querySelector('header.nav').classList.toggle('mobile-open')" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
 
         <nav style="display: flex; align-items: center; gap: 22px;">
           <a href="#services" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Services</a>
@@ -833,7 +839,7 @@
           <a href="#work" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Case Studies</a>
           <a href="blogs.html" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">Blogs</a>
           <a href="#faq" style="font-weight: 600; font-size: 14.5px; color: #111111; text-decoration: none;">FAQ</a>
-          <a href="#hero-form" style="background: #F3E733; color: #111111; font-weight: 700; font-size: 14px; padding: 10px 22px; border-radius: 999px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(243,231,51,0.4);" onclick="dataLayer.push({'event':'cta_click', 'location':'header'});">Let's Talk &rarr;</a>
+          <a href="#hero-form" class="btn" style="background: #F3E733; color: #111111; font-weight: 700; font-size: 14px; padding: 10px 22px; border-radius: 999px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 14px rgba(243,231,51,0.4);" onclick="dataLayer.push({'event':'cta_click', 'location':'header'});">Let's Talk &rarr;</a>
         </nav>
       </div>
     </div>
