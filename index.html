@@ -770,10 +770,309 @@
       .mobile-scroll-bar { display: block; }
     }
 
-    @media (max-width: 480px) {
-      .stat-grid { grid-template-columns: 1fr !important; }
-      .stat .num { font-size: 34px !important; }
-      h2 { font-size: 28px !important; }
+    /* --------------------------------
+       FEATURED WORK SECTION
+    -------------------------------- */
+    .featured-work {
+      position: relative;
+      width: 100%;
+      padding: 120px 4vw 140px;
+      overflow: hidden;
+      background: #f7f6f2;
+      color: #111;
+    }
+
+    .featured-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 70px;
+    }
+
+    .featured-label {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+    }
+
+    .featured-heading {
+      max-width: 900px;
+      font-size: clamp(52px, 8vw, 125px);
+      line-height: 0.9;
+      letter-spacing: -0.065em;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .featured-heading span {
+      display: block;
+    }
+
+    .view-all {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+
+      font-size: 15px;
+      font-weight: 600;
+      color: #111;
+      text-decoration: none;
+
+      border-bottom: 1px solid #111;
+      padding-bottom: 6px;
+
+      transition:
+        gap 0.35s ease,
+        opacity 0.35s ease;
+    }
+
+    .view-all:hover {
+      gap: 20px;
+      opacity: 0.65;
+    }
+
+    .arrow {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .work-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .work-track {
+      display: flex;
+      gap: 24px;
+      width: max-content;
+
+      transform: translateX(0);
+      transition: transform 0.1s linear;
+
+      will-change: transform;
+    }
+
+    .work-card {
+      position: relative;
+
+      width: min(72vw, 1050px);
+      height: min(57vw, 700px);
+
+      flex-shrink: 0;
+
+      overflow: hidden;
+
+      background: #ddd;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+    .work-card-image {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition:
+        transform 0.9s cubic-bezier(.2,.7,.2,1);
+    }
+
+    .work-card:hover .work-card-image {
+      transform: scale(1.06);
+    }
+
+    .work-overlay {
+      position: absolute;
+      inset: 0;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      padding: 32px;
+
+      background:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,.35),
+          transparent 35%,
+          rgba(0,0,0,.7)
+        );
+
+      color: white;
+
+      opacity: 0;
+
+      transition: opacity 0.5s ease;
+    }
+
+    .work-card:hover .work-overlay {
+      opacity: 1;
+    }
+
+    .work-category {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-weight: 600;
+    }
+
+    .work-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+    }
+
+    .work-title {
+      font-size: clamp(38px, 5vw, 72px);
+      line-height: .95;
+      letter-spacing: -.04em;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .work-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      white-space: nowrap;
+
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .work-info {
+      padding: 20px 2px 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #111;
+    }
+
+    .work-name {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -.02em;
+    }
+
+    .work-type {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      opacity: .6;
+    }
+
+    .work-progress {
+      margin-top: 55px;
+
+      width: 100%;
+      height: 1px;
+
+      background: rgba(0,0,0,.15);
+
+      position: relative;
+    }
+
+    .work-progress-bar {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      width: 18%;
+      height: 2px;
+
+      background: #111;
+
+      transform-origin: left;
+    }
+
+    @media (max-width: 768px) {
+      .featured-work {
+        padding: 80px 20px 90px;
+      }
+
+      .featured-header {
+        display: block;
+        margin-bottom: 45px;
+      }
+
+      .featured-label {
+        margin-bottom: 25px;
+      }
+
+      .featured-heading {
+        font-size: clamp(48px, 15vw, 85px);
+        line-height: .88;
+      }
+
+      .view-all {
+        margin-top: 30px;
+      }
+
+      .work-track {
+        gap: 15px;
+      }
+
+      .work-card {
+        width: 86vw;
+        height: 110vw;
+        max-height: 620px;
+      }
+
+      .work-overlay {
+        opacity: 1;
+        padding: 22px;
+
+        background:
+          linear-gradient(
+            to bottom,
+            rgba(0,0,0,.15),
+            transparent 30%,
+            rgba(0,0,0,.8)
+          );
+      }
+
+      .work-title {
+        font-size: 44px;
+      }
+
+      .work-info {
+        padding-top: 15px;
+      }
+
+      .work-name {
+        font-size: 17px;
+      }
+
+      .work-type {
+        font-size: 11px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .work-track {
+        transform: none !important;
+      }
+
+      .work-card-image,
+      .view-all,
+      .work-overlay {
+        transition: none;
+      }
     }
   </style>
 
@@ -1093,6 +1392,225 @@
         });
       }
     });
+  </script>
+
+  <!-- FEATURED WORK SECTION (HORIZONTAL SCROLL TRACK) -->
+  <section class="featured-work" id="featured-work">
+    <!-- HEADER -->
+    <div class="featured-header">
+      <div>
+        <div class="featured-label">
+          Featured work
+        </div>
+        <h2 class="featured-heading">
+          <span>A lot of buzz.</span>
+          <span>Less scroll.</span>
+        </h2>
+      </div>
+
+      <a href="#work" class="view-all">
+        View all work
+        <span class="arrow">↗️</span>
+      </a>
+    </div>
+
+    <!-- HORIZONTAL WORK AREA -->
+    <div class="work-wrapper">
+      <div class="work-track" id="workTrack">
+
+        <!-- WORK 01 -->
+        <article class="work-card">
+          <img
+            class="work-card-image"
+            src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1000&auto=format&fit=crop"
+            onerror="this.onerror=null; this.src='assets/work-01.webp';"
+            alt="Ayodhya Dharshan featured project"
+          />
+          <div class="work-overlay">
+            <div class="work-category">
+              <span>Travel & Tourism</span>
+              <span>01</span>
+            </div>
+            <div class="work-bottom">
+              <h3 class="work-title">
+                Ayodhya
+                Growth
+              </h3>
+              <div class="work-link">
+                View work →
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-name">
+              Ayodhya Dharshan
+            </div>
+            <div class="work-type">
+              Performance
+            </div>
+          </div>
+        </article>
+
+        <!-- WORK 02 -->
+        <article class="work-card">
+          <img
+            class="work-card-image"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
+            onerror="this.onerror=null; this.src='assets/work-02.webp';"
+            alt="GoldenAge Landbase featured project"
+          />
+          <div class="work-overlay">
+            <div class="work-category">
+              <span>Real Estate</span>
+              <span>02</span>
+            </div>
+            <div class="work-bottom">
+              <h3 class="work-title">
+                Property
+                That Converts
+              </h3>
+              <div class="work-link">
+                View work →
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-name">
+              GoldenAge Landbase
+            </div>
+            <div class="work-type">
+              Digital Growth
+            </div>
+          </div>
+        </article>
+
+        <!-- WORK 03 -->
+        <article class="work-card">
+          <img
+            class="work-card-image"
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
+            onerror="this.onerror=null; this.src='assets/work-03.webp';"
+            alt="Digitacurve featured project"
+          />
+          <div class="work-overlay">
+            <div class="work-category">
+              <span>Digital Marketing</span>
+              <span>03</span>
+            </div>
+            <div class="work-bottom">
+              <h3 class="work-title">
+                Brands
+                That Grow
+              </h3>
+              <div class="work-link">
+                View work →
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-name">
+              Digitacurve
+            </div>
+            <div class="work-type">
+              Branding & Performance
+            </div>
+          </div>
+        </article>
+
+        <!-- WORK 04 -->
+        <article class="work-card">
+          <img
+            class="work-card-image"
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop"
+            onerror="this.onerror=null; this.src='assets/work-04.webp';"
+            alt="Hospitality Growth featured project"
+          />
+          <div class="work-overlay">
+            <div class="work-category">
+              <span>Hospitality</span>
+              <span>04</span>
+            </div>
+            <div class="work-bottom">
+              <h3 class="work-title">
+                Experience
+                Meets Growth
+              </h3>
+              <div class="work-link">
+                View work →
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <div class="work-name">
+              Hospitality Growth
+            </div>
+            <div class="work-type">
+              Digital
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="work-progress">
+      <div
+        class="work-progress-bar"
+        id="progressBar">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      const track = document.getElementById("workTrack");
+      const progressBar = document.getElementById("progressBar");
+
+      let targetX = 0;
+      let currentX = 0;
+      let maxScroll = 0;
+
+      function calculateWidth() {
+        const wrapper = document.querySelector(".work-wrapper");
+        if (wrapper && track) {
+          maxScroll = Math.max(0, track.scrollWidth - wrapper.clientWidth);
+        }
+      }
+
+      function updateFromScroll() {
+        const section = document.querySelector(".featured-work");
+        if (!section || !progressBar) return;
+
+        const rect = section.getBoundingClientRect();
+        const viewport = window.innerHeight;
+        const sectionHeight = section.offsetHeight;
+
+        const progress = Math.min(
+          1,
+          Math.max(0, (viewport - rect.top) / (sectionHeight + viewport))
+        );
+
+        targetX = progress * maxScroll;
+        const barProgress = maxScroll === 0 ? 0 : targetX / maxScroll;
+        progressBar.style.width = `${18 + barProgress * 82}%`;
+      }
+
+      function animate() {
+        if (track) {
+          currentX += (targetX - currentX) * 0.08;
+          track.style.transform = `translate3d(${-currentX}px,0,0)`;
+        }
+        requestAnimationFrame(animate);
+      }
+
+      window.addEventListener("scroll", updateFromScroll, { passive: true });
+      window.addEventListener("resize", calculateWidth);
+
+      calculateWidth();
+      updateFromScroll();
+      animate();
+    })();
   </script>
 
   <!-- SPEND THAT RETURNS (CASE STUDIES GRID FROM REFERENCE) -->
