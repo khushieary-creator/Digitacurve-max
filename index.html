@@ -972,25 +972,36 @@
 
     @media (max-width: 868px) {
       .featured-work-section {
-        padding: 70px 20px 80px;
+        padding: 50px 16px 60px;
       }
       .accordion-container {
         height: 480px;
-        overflow-x: auto;
-        padding-bottom: 10px;
-        scroll-snap-type: x mandatory;
+        gap: 8px;
+        border-radius: 18px;
       }
       .accordion-card {
-        min-width: 270px;
-        flex: none !important;
-        scroll-snap-align: start;
+        min-width: 36px;
+        border-radius: 14px;
       }
-      .accordion-card .vertical-title {
-        display: none;
+      .accordion-card.active {
+        flex: 5;
+        min-width: 170px;
       }
-      .accordion-card .expanded-content {
-        opacity: 1;
-        pointer-events: auto;
+      .expanded-content {
+        padding: 24px 18px;
+      }
+      .expanded-title {
+        font-size: 26px;
+        margin-bottom: 8px;
+      }
+      .expanded-sub {
+        font-size: 13px;
+        margin-bottom: 14px;
+        line-height: 1.35;
+      }
+      .vertical-title {
+        bottom: 20px;
+        font-size: 13px;
       }
     }
   </style>
@@ -1426,10 +1437,14 @@
 
   <script>
     document.querySelectorAll('.accordion-card').forEach(card => {
-      card.addEventListener('mouseenter', () => {
+      const activateCard = () => {
         document.querySelectorAll('.accordion-card').forEach(c => c.classList.remove('active'));
         card.classList.add('active');
-      });
+      };
+
+      card.addEventListener('mouseenter', activateCard);
+      card.addEventListener('click', activateCard);
+      card.addEventListener('touchstart', activateCard, { passive: true });
     });
   </script>
 
