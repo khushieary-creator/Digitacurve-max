@@ -776,7 +776,7 @@
     .featured-work-section {
       position: relative;
       width: 100%;
-      padding: 100px 4vw 110px;
+      padding: 70px 4vw 80px;
       background: #0d0e10;
       color: #ffffff;
       overflow: hidden;
@@ -786,16 +786,16 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      margin-bottom: 50px;
+      margin-bottom: 32px;
       flex-wrap: wrap;
       gap: 20px;
     }
 
     .featured-work-title {
-      font-size: clamp(38px, 6vw, 78px);
+      font-size: clamp(26px, 3.8vw, 44px);
       font-weight: 800;
-      line-height: 1.05;
-      letter-spacing: -0.03em;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
       color: #ffffff;
       margin: 0;
     }
@@ -812,7 +812,7 @@
       left: 0;
       bottom: 2px;
       width: 100%;
-      height: 8px;
+      height: 5px;
       background: #F3E733;
       border-radius: 4px;
     }
@@ -821,7 +821,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       color: #ffffff;
       text-decoration: none;
@@ -887,17 +887,17 @@
     /* COLLAPSED VERTICAL TEXT */
     .vertical-title {
       position: absolute;
-      bottom: 40px;
+      bottom: 30px;
       left: 50%;
-      transform: translateX(-50%) rotate(-90deg);
+      writing-mode: vertical-rl;
+      transform: translateX(-50%) rotate(180deg);
       white-space: nowrap;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 700;
       color: rgba(255, 255, 255, 0.95);
       letter-spacing: 0.05em;
       pointer-events: none;
       transition: opacity 0.3s ease, visibility 0.3s ease;
-      transform-origin: center center;
     }
 
     .accordion-card.active .vertical-title {
