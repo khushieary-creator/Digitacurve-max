@@ -771,307 +771,226 @@
     }
 
     /* --------------------------------
-       FEATURED WORK SECTION
+       FEATURED WORK ACCORDION (BRANDBEE STYLE)
     -------------------------------- */
-    .featured-work {
+    .featured-work-section {
       position: relative;
       width: 100%;
-      padding: 120px 4vw 140px;
+      padding: 100px 4vw 110px;
+      background: #0d0e10;
+      color: #ffffff;
       overflow: hidden;
-      background: #f7f6f2;
-      color: #111;
     }
 
-    .featured-header {
+    .featured-work-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
-      margin-bottom: 70px;
-    }
-
-    .featured-label {
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--ink);
-    }
-
-    .featured-heading {
-      max-width: 900px;
-      font-size: clamp(52px, 8vw, 125px);
-      line-height: 0.9;
-      letter-spacing: -0.065em;
-      font-weight: 700;
-      color: var(--ink);
-    }
-
-    .featured-heading span {
-      display: block;
-    }
-
-    .view-all {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-
-      font-size: 15px;
-      font-weight: 600;
-      color: #111;
-      text-decoration: none;
-
-      border-bottom: 1px solid #111;
-      padding-bottom: 6px;
-
-      transition:
-        gap 0.35s ease,
-        opacity 0.35s ease;
-    }
-
-    .view-all:hover {
+      margin-bottom: 50px;
+      flex-wrap: wrap;
       gap: 20px;
-      opacity: 0.65;
     }
 
-    .arrow {
-      font-size: 18px;
-      line-height: 1;
-    }
-
-    .work-wrapper {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .work-track {
-      display: flex;
-      gap: 24px;
-      width: max-content;
-
-      transform: translateX(0);
-      transition: transform 0.1s linear;
-
-      will-change: transform;
-    }
-
-    .work-card {
-      position: relative;
-
-      width: min(72vw, 1050px);
-      height: min(57vw, 700px);
-
-      flex-shrink: 0;
-
-      overflow: hidden;
-
-      background: #ddd;
-      cursor: pointer;
-      border-radius: 12px;
-    }
-
-    .work-card-image {
-      position: absolute;
-      inset: 0;
-
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
-
-      transition:
-        transform 0.9s cubic-bezier(.2,.7,.2,1);
-    }
-
-    .work-card:hover .work-card-image {
-      transform: scale(1.06);
-    }
-
-    .work-overlay {
-      position: absolute;
-      inset: 0;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      padding: 32px;
-
-      background:
-        linear-gradient(
-          to bottom,
-          rgba(0,0,0,.35),
-          transparent 35%,
-          rgba(0,0,0,.7)
-        );
-
-      color: white;
-
-      opacity: 0;
-
-      transition: opacity 0.5s ease;
-    }
-
-    .work-card:hover .work-overlay {
-      opacity: 1;
-    }
-
-    .work-category {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      font-weight: 600;
-    }
-
-    .work-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 30px;
-    }
-
-    .work-title {
-      font-size: clamp(38px, 5vw, 72px);
-      line-height: .95;
-      letter-spacing: -.04em;
-      font-weight: 700;
+    .featured-work-title {
+      font-size: clamp(38px, 6vw, 78px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
       color: #ffffff;
+      margin: 0;
     }
 
-    .work-link {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-
+    .featured-work-title span.underline-yellow {
+      position: relative;
+      display: inline-block;
       white-space: nowrap;
-
-      font-size: 14px;
-      font-weight: 600;
-      color: #ffffff;
     }
 
-    .work-info {
-      padding: 20px 2px 0;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #111;
-    }
-
-    .work-name {
-      font-size: 19px;
-      font-weight: 600;
-      letter-spacing: -.02em;
-    }
-
-    .work-type {
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      opacity: .6;
-    }
-
-    .work-progress {
-      margin-top: 55px;
-
-      width: 100%;
-      height: 1px;
-
-      background: rgba(0,0,0,.15);
-
-      position: relative;
-    }
-
-    .work-progress-bar {
+    .featured-work-title span.underline-yellow::after {
+      content: '';
       position: absolute;
       left: 0;
-      top: 0;
-
-      width: 18%;
-      height: 2px;
-
-      background: #111;
-
-      transform-origin: left;
+      bottom: 2px;
+      width: 100%;
+      height: 8px;
+      background: #F3E733;
+      border-radius: 4px;
     }
 
-    @media (max-width: 768px) {
-      .featured-work {
-        padding: 80px 20px 90px;
-      }
+    .featured-view-all {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+      border-bottom: 2px solid #F3E733;
+      padding-bottom: 4px;
+      transition: opacity 0.3s ease;
+    }
 
-      .featured-header {
-        display: block;
-        margin-bottom: 45px;
-      }
+    .featured-view-all:hover {
+      opacity: 0.8;
+    }
 
-      .featured-label {
-        margin-bottom: 25px;
-      }
+    /* ACCORDION TRACK */
+    .accordion-container {
+      display: flex;
+      gap: 14px;
+      width: 100%;
+      height: 520px;
+      border-radius: 24px;
+    }
 
-      .featured-heading {
-        font-size: clamp(48px, 15vw, 85px);
-        line-height: .88;
-      }
+    .accordion-card {
+      position: relative;
+      flex: 1;
+      min-width: 75px;
+      height: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      background: #181a1e;
+      transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1), transform 0.4s ease;
+    }
 
-      .view-all {
-        margin-top: 30px;
-      }
+    .accordion-card.active {
+      flex: 5.5;
+    }
 
-      .work-track {
-        gap: 15px;
-      }
+    .accordion-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
 
-      .work-card {
-        width: 86vw;
-        height: 110vw;
-        max-height: 620px;
-      }
+    .accordion-card:hover .accordion-bg {
+      transform: scale(1.05);
+    }
 
-      .work-overlay {
+    .accordion-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.88) 0%,
+        rgba(0, 0, 0, 0.35) 50%,
+        rgba(0, 0, 0, 0.15) 100%
+      );
+      transition: opacity 0.4s ease;
+    }
+
+    /* COLLAPSED VERTICAL TEXT */
+    .vertical-title {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-90deg);
+      white-space: nowrap;
+      font-size: 17px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.95);
+      letter-spacing: 0.05em;
+      pointer-events: none;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      transform-origin: center center;
+    }
+
+    .accordion-card.active .vertical-title {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* EXPANDED CONTENT */
+    .expanded-content {
+      position: absolute;
+      inset: 0;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      z-index: 2;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease 0.15s;
+    }
+
+    .accordion-card.active .expanded-content {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .expanded-category {
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #F3E733;
+      margin-bottom: 8px;
+    }
+
+    .expanded-title {
+      font-size: clamp(28px, 3.5vw, 48px);
+      font-weight: 800;
+      line-height: 1.05;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .expanded-sub {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 440px;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .expanded-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 10px 20px;
+      border-radius: 999px;
+      width: fit-content;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .expanded-btn:hover {
+      background: #F3E733;
+      color: #111111;
+    }
+
+    @media (max-width: 868px) {
+      .featured-work-section {
+        padding: 70px 20px 80px;
+      }
+      .accordion-container {
+        height: 480px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+      }
+      .accordion-card {
+        min-width: 270px;
+        flex: none !important;
+        scroll-snap-align: start;
+      }
+      .accordion-card .vertical-title {
+        display: none;
+      }
+      .accordion-card .expanded-content {
         opacity: 1;
-        padding: 22px;
-
-        background:
-          linear-gradient(
-            to bottom,
-            rgba(0,0,0,.15),
-            transparent 30%,
-            rgba(0,0,0,.8)
-          );
-      }
-
-      .work-title {
-        font-size: 44px;
-      }
-
-      .work-info {
-        padding-top: 15px;
-      }
-
-      .work-name {
-        font-size: 17px;
-      }
-
-      .work-type {
-        font-size: 11px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .work-track {
-        transform: none !important;
-      }
-
-      .work-card-image,
-      .view-all,
-      .work-overlay {
-        transition: none;
+        pointer-events: auto;
       }
     }
   </style>
@@ -1394,223 +1313,124 @@
     });
   </script>
 
-  <!-- FEATURED WORK SECTION (HORIZONTAL SCROLL TRACK) -->
-  <section class="featured-work" id="featured-work">
+  <!-- FEATURED WORK ACCORDION SECTION (BRANDBEE STYLE) -->
+  <section class="featured-work-section" id="featured-work">
     <!-- HEADER -->
-    <div class="featured-header">
+    <div class="featured-work-header">
       <div>
-        <div class="featured-label">
-          Featured work
-        </div>
-        <h2 class="featured-heading">
-          <span>A lot of buzz.</span>
-          <span>Less scroll.</span>
+        <h2 class="featured-work-title">
+          A lot of buzz. <span class="underline-yellow">Less scroll.</span>
         </h2>
       </div>
-
-      <a href="#work" class="view-all">
-        View all work
-        <span class="arrow">↗️</span>
+      <a href="#hero-form" class="featured-view-all">
+        View all work &rarr;
       </a>
     </div>
 
-    <!-- HORIZONTAL WORK AREA -->
-    <div class="work-wrapper">
-      <div class="work-track" id="workTrack">
-
-        <!-- WORK 01 -->
-        <article class="work-card">
-          <img
-            class="work-card-image"
-            src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1000&auto=format&fit=crop"
-            onerror="this.onerror=null; this.src='assets/work-01.webp';"
-            alt="Ayodhya Dharshan featured project"
-          />
-          <div class="work-overlay">
-            <div class="work-category">
-              <span>Travel & Tourism</span>
-              <span>01</span>
-            </div>
-            <div class="work-bottom">
-              <h3 class="work-title">
-                Ayodhya
-                Growth
-              </h3>
-              <div class="work-link">
-                View work →
-              </div>
-            </div>
-          </div>
-          <div class="work-info">
-            <div class="work-name">
-              Ayodhya Dharshan
-            </div>
-            <div class="work-type">
-              Performance
-            </div>
-          </div>
-        </article>
-
-        <!-- WORK 02 -->
-        <article class="work-card">
-          <img
-            class="work-card-image"
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop"
-            onerror="this.onerror=null; this.src='assets/work-02.webp';"
-            alt="GoldenAge Landbase featured project"
-          />
-          <div class="work-overlay">
-            <div class="work-category">
-              <span>Real Estate</span>
-              <span>02</span>
-            </div>
-            <div class="work-bottom">
-              <h3 class="work-title">
-                Property
-                That Converts
-              </h3>
-              <div class="work-link">
-                View work →
-              </div>
-            </div>
-          </div>
-          <div class="work-info">
-            <div class="work-name">
-              GoldenAge Landbase
-            </div>
-            <div class="work-type">
-              Digital Growth
-            </div>
-          </div>
-        </article>
-
-        <!-- WORK 03 -->
-        <article class="work-card">
-          <img
-            class="work-card-image"
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
-            onerror="this.onerror=null; this.src='assets/work-03.webp';"
-            alt="Digitacurve featured project"
-          />
-          <div class="work-overlay">
-            <div class="work-category">
-              <span>Digital Marketing</span>
-              <span>03</span>
-            </div>
-            <div class="work-bottom">
-              <h3 class="work-title">
-                Brands
-                That Grow
-              </h3>
-              <div class="work-link">
-                View work →
-              </div>
-            </div>
-          </div>
-          <div class="work-info">
-            <div class="work-name">
-              Digitacurve
-            </div>
-            <div class="work-type">
-              Branding & Performance
-            </div>
-          </div>
-        </article>
-
-        <!-- WORK 04 -->
-        <article class="work-card">
-          <img
-            class="work-card-image"
-            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop"
-            onerror="this.onerror=null; this.src='assets/work-04.webp';"
-            alt="Hospitality Growth featured project"
-          />
-          <div class="work-overlay">
-            <div class="work-category">
-              <span>Hospitality</span>
-              <span>04</span>
-            </div>
-            <div class="work-bottom">
-              <h3 class="work-title">
-                Experience
-                Meets Growth
-              </h3>
-              <div class="work-link">
-                View work →
-              </div>
-            </div>
-          </div>
-          <div class="work-info">
-            <div class="work-name">
-              Hospitality Growth
-            </div>
-            <div class="work-type">
-              Digital
-            </div>
-          </div>
-        </article>
-
+    <!-- ACCORDION CONTAINER -->
+    <div class="accordion-container">
+      
+      <!-- CARD 1: SweetC (Active by default) -->
+      <div class="accordion-card active">
+        <img class="accordion-bg" src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1000&auto=format&fit=crop" alt="SweetC Food & Beverage" />
+        <div class="accordion-overlay"></div>
+        <div class="vertical-title">SweetC</div>
+        <div class="expanded-content">
+          <div class="expanded-category">FOOD & BEVERAGE</div>
+          <div class="expanded-title">SweetC</div>
+          <div class="expanded-sub">Premium imported mandarin oranges at your nearest store. Taste the upgrade.</div>
+          <a href="#hero-form" class="expanded-btn">View work &rarr;</a>
+        </div>
       </div>
-    </div>
 
-    <!-- PROGRESS -->
-    <div class="work-progress">
-      <div
-        class="work-progress-bar"
-        id="progressBar">
+      <!-- CARD 2: Ayodhya Dharshan -->
+      <div class="accordion-card">
+        <img class="accordion-bg" src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1000&auto=format&fit=crop" alt="Ayodhya Dharshan Travel" />
+        <div class="accordion-overlay"></div>
+        <div class="vertical-title">Ayodhya Dharshan</div>
+        <div class="expanded-content">
+          <div class="expanded-category">TRAVEL & TOURISM</div>
+          <div class="expanded-title">Ayodhya Dharshan</div>
+          <div class="expanded-sub">Scaling high-intent spiritual tourism & Yatra booking campaigns across India.</div>
+          <a href="travel-company.html" class="expanded-btn">View work &rarr;</a>
+        </div>
       </div>
+
+      <!-- CARD 3: GoldenAge Landbase -->
+      <div class="accordion-card">
+        <img class="accordion-bg" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop" alt="GoldenAge Landbase Real Estate" />
+        <div class="accordion-overlay"></div>
+        <div class="vertical-title">GoldenAge Landbase</div>
+        <div class="expanded-content">
+          <div class="expanded-category">REAL ESTATE</div>
+          <div class="expanded-title">GoldenAge Landbase</div>
+          <div class="expanded-sub">Pre-qualified buyer lead pipelines and site visit conversion optimization.</div>
+          <a href="real-estate.html" class="expanded-btn">View work &rarr;</a>
+        </div>
+      </div>
+
+      <!-- CARD 4: Digitacurve -->
+      <div class="accordion-card">
+        <img class="accordion-bg" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" alt="Digitacurve Growth" />
+        <div class="accordion-overlay"></div>
+        <div class="vertical-title">Digitacurve</div>
+        <div class="expanded-content">
+          <div class="expanded-category">BRANDING & PERFORMANCE</div>
+          <div class="expanded-title">Digitacurve</div>
+          <div class="expanded-sub">Full-funnel accountable acquisition engine combining Ads, CRO & Server-Side tracking.</div>
+          <a href="performance-marketing.html" class="expanded-btn">View work &rarr;</a>
+        </div>
+      </div>
+
+      <!-- CARD 5: Hospitality Growth -->
+      <div class="accordion-card">
+        <img class="accordion-bg" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop" alt="Hospitality Growth" />
+        <div class="accordion-overlay"></div>
+        <div class="vertical-title">Hospitality Growth</div>
+        <div class="expanded-content">
+          <div class="expanded-category">HOSPITALITY</div>
+          <div class="expanded-title">Hospitality Growth</div>
+          <div class="expanded-sub">Direct hotel booking acquisition and guest retargeting framework.</div>
+          <a href="#hero-form" class="expanded-btn">View work &rarr;</a>
+        </div>
+      </div>
+
+      <!-- CARD 6: E-Commerce Scale -->
+      <div class="accordion-card">
+        <img class="accordion-bg" src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1000&auto=format&fit=crop" alt="E-Commerce Scale" />
+        <div class="accordion-overlay"></div>
+        <div class="vertical-title">E-Commerce Scale</div>
+        <div class="expanded-content">
+          <div class="expanded-category">D2C & E-COMMERCE</div>
+          <div class="expanded-title">E-Commerce Scale</div>
+          <div class="expanded-sub">Scaling Shopify stores with ROAS-first creative hooks and Advantage+ campaigns.</div>
+          <a href="e-commerce.html" class="expanded-btn">View work &rarr;</a>
+        </div>
+      </div>
+
+      <!-- CARD 7: Coca-Cola Brand Scale -->
+      <div class="accordion-card">
+        <img class="accordion-bg" src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=1000&auto=format&fit=crop" alt="Coca-Cola Brand Scale" />
+        <div class="accordion-overlay"></div>
+        <div class="vertical-title">Brand Scale</div>
+        <div class="expanded-content">
+          <div class="expanded-category">GLOBAL BRANDING</div>
+          <div class="expanded-title">Brand Scale</div>
+          <div class="expanded-sub">High-impact brand positioning and multi-channel campaign deployment.</div>
+          <a href="#hero-form" class="expanded-btn">View work &rarr;</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <script>
-    (function() {
-      const track = document.getElementById("workTrack");
-      const progressBar = document.getElementById("progressBar");
-
-      let targetX = 0;
-      let currentX = 0;
-      let maxScroll = 0;
-
-      function calculateWidth() {
-        const wrapper = document.querySelector(".work-wrapper");
-        if (wrapper && track) {
-          maxScroll = Math.max(0, track.scrollWidth - wrapper.clientWidth);
-        }
-      }
-
-      function updateFromScroll() {
-        const section = document.querySelector(".featured-work");
-        if (!section || !progressBar) return;
-
-        const rect = section.getBoundingClientRect();
-        const viewport = window.innerHeight;
-        const sectionHeight = section.offsetHeight;
-
-        const progress = Math.min(
-          1,
-          Math.max(0, (viewport - rect.top) / (sectionHeight + viewport))
-        );
-
-        targetX = progress * maxScroll;
-        const barProgress = maxScroll === 0 ? 0 : targetX / maxScroll;
-        progressBar.style.width = `${18 + barProgress * 82}%`;
-      }
-
-      function animate() {
-        if (track) {
-          currentX += (targetX - currentX) * 0.08;
-          track.style.transform = `translate3d(${-currentX}px,0,0)`;
-        }
-        requestAnimationFrame(animate);
-      }
-
-      window.addEventListener("scroll", updateFromScroll, { passive: true });
-      window.addEventListener("resize", calculateWidth);
-
-      calculateWidth();
-      updateFromScroll();
-      animate();
-    })();
+    document.querySelectorAll('.accordion-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        document.querySelectorAll('.accordion-card').forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+      });
+    });
   </script>
 
   <!-- SPEND THAT RETURNS (CASE STUDIES GRID FROM REFERENCE) -->
