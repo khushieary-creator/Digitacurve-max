@@ -131,7 +131,11 @@
         <div class="lead-form" id="hero-form">
           <h3>Claim Free Growth Audit</h3>
           <p>Our strategy team will analyze your ad account within 24 hours.</p>
-          <form action="thank-you.html" method="GET">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="5ef1de03-3121-497f-9a8d-6fdac001129a">
+            <input type="hidden" name="redirect" value="https://digitacurve-max.vercel.app/thank-you.html">
+            <input type="hidden" name="subject" value="New Performance Marketing Lead - Digitacurve">
+            <input type="hidden" name="from_name" value="Digitacurve Performance Marketing Page">
             <input type="text" name="name" required placeholder="Full Name *">
             <input type="email" name="email" required placeholder="Business Email *">
             <input type="tel" name="phone" required placeholder="Phone Number *">

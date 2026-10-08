@@ -886,7 +886,11 @@
           <div class="ff-title">Ready to make your marketing accountable?</div>
           <div class="ff-sub">Get your customized performance audit & ROI growth roadmap.</div>
 
-          <form action="thank-you.html" method="GET" onsubmit="dataLayer.push({'event':'form_submit', 'form_name':'hero_form'});">
+          <form action="https://api.web3forms.com/submit" method="POST" onsubmit="dataLayer.push({'event':'form_submit', 'form_name':'hero_form'});">
+            <input type="hidden" name="access_key" value="5ef1de03-3121-497f-9a8d-6fdac001129a">
+            <input type="hidden" name="redirect" value="https://digitacurve-max.vercel.app/thank-you.html">
+            <input type="hidden" name="subject" value="New Lead Submission - Hero Form">
+            <input type="hidden" name="from_name" value="Digitacurve Website">
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div>
                 <label style="font-size: 12px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; display: block;">Your Full Name *</label>
@@ -1348,7 +1352,11 @@
           <div class="ff-title">Claim Free Growth Audit</div>
           <div class="ff-sub">Our strategy team will analyze your ad account within 24 hours.</div>
 
-          <form action="thank-you.html" method="GET" onsubmit="dataLayer.push({'event':'form_submit', 'form_name':'banner_form'});">
+          <form action="https://api.web3forms.com/submit" method="POST" onsubmit="dataLayer.push({'event':'form_submit', 'form_name':'banner_form'});">
+            <input type="hidden" name="access_key" value="5ef1de03-3121-497f-9a8d-6fdac001129a">
+            <input type="hidden" name="redirect" value="https://digitacurve-max.vercel.app/thank-you.html">
+            <input type="hidden" name="subject" value="New Free Audit Request - Banner Form">
+            <input type="hidden" name="from_name" value="Digitacurve Website">
             <div style="display: flex; flex-direction: column; gap: 10px;">
               <input type="text" name="name" required placeholder="Your Full Name *">
               <input type="email" name="email" required placeholder="Business Email *">
